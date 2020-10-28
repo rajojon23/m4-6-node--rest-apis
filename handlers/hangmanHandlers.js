@@ -47,10 +47,7 @@ const guessLetter = (req, res) => {
     })["word"];
 
 
-    console.log("the word to guess is ",wordToGuess);
-
     let guessArr = [];
-    console.log("iterating through the word");
     [...wordToGuess].forEach((letter) => {
         if(letter.toLowerCase() == guessedLetter.toLowerCase()){
             guessArr.push(true);
